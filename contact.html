@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce project</title>
+
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav starts here  -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav-upper flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="register.html" class="nav__link">Register</a>
+        </li>
+        <li class="nav__list">
+          <a href="login.html" class="nav__link">Login</a>
+        </li>
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Logout</a>
+        </li>
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">
+            <img
+              src="./images/profile1.png"
+              class="profile-icon"
+              alt="profile"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav-lower flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link nav__brand">Anis Express</a>
+        </li>
+        <li class="nav__list">
+          <a href="cart.html" class="nav__link">
+            <span>
+              <i class="fa-solid fa-cart-shopping"></i>
+              Cart 2 Products - $124.40
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- nav ends here  -->
+
+    <main>
+      <section class="contact-section">
+        <h2 class="section-title text-center">Contact Us</h2>
+        <div class="contact-container flex-center">
+          <form class="form card">
+            <div class="form-control flex-center">
+              <label for="name">Name</label>
+              <input type="text" id="name" required autocomplete="name" />
+            </div>
+            <div class="form-control flex-center">
+              <label for="email">Email</label>
+              <input type="email" id="email" required autocomplete="email" />
+            </div>
+
+            <div class="form-control flex-center">
+              <label for="message">Message</label>
+              <textarea name="message" id="message"></textarea>
+            </div>
+            <div class="form-control flex-center form-btn-field">
+              <button type="submit" class="btn contact-btn">Submit</button>
+            </div>
+          </form>
+
+          <div class="contact-address flex-space-around">
+            <address>
+              <h4>Address:</h4>
+              <p>Paniskatu 2D 99</p>
+              <p>444700, Tampere, Finland.</p>
+              <br />
+
+              <span>Call: </span>
+              <a href="tel:+3584044444449849">+3584044444449849</a>
+            </address>
+
+            <iframe
+              class="contact__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d972738.4967432638!2d20.692436966362738!3d61.56365872378927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46890adee8df0869%3A0x67162088e58d76af!2sPori!5e0!3m2!1sen!2sfi!4v1676228116317!5m2!1sen!2sfi"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Subscribe to Newsletter: </label>
+        <input
+          type="email"
+          id="subscribe"
+          name="subscribe"
+          class="footer__input"
+          placeholder="Your Email Address"
+        />
+        <button class="btn btn-subscribe">subscribe</button>
+      </div>
+      <div>
+        <p>&copy; Copyright 2023 Anis Express. All rights rserved</p>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

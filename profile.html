@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce project</title>
+
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav starts here  -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav-upper flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Home</a>
+        </li>
+        <li class="nav__list">
+          <a href="register.html" class="nav__link">Register</a>
+        </li>
+        <li class="nav__list">
+          <a href="login.html" class="nav__link">Login</a>
+        </li>
+        <li class="nav__list">
+          <a href="index.html" class="nav__link">Logout</a>
+        </li>
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">
+            <img
+              src="./images/profile1.png"
+              class="profile-icon"
+              alt="profile"
+            />
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav-lower flex-space-around">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link nav__brand">Anis Express</a>
+        </li>
+        <li class="nav__list">
+          <a href="cart.html" class="nav__link">
+            <span>
+              <i class="fa-solid fa-cart-shopping"></i>
+              Cart 2 Products - $124.40
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- nav ends here  -->
+
+    <main>
+      <section class="profile flex-center">
+        <h2 class="section-title text-center">User Profile</h2>
+        <div class="card flex-center">
+          <img src="./images/profile1.png" alt="profile" class="profile__img" />
+          <h2 class="profile__name">Anisul Islam</h2>
+          <p class="profile__email">Anisul2010s_@gmail.com</p>
+          <p class="profile__about">
+            I love to shop different types of gadegts. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Adipisci, praesentium.
+          </p>
+          <div class="profile__buttons">
+            <button class="btn profile__edit-btn">
+              <i class="far fa-edit fa-2x"></i>
+            </button>
+            <button class="btn profile__edit-btn">
+              <i class="far fa-trash-alt fa-2x"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Subscribe to Newsletter: </label>
+        <input
+          type="email"
+          id="subscribe"
+          name="subscribe"
+          class="footer__input"
+          placeholder="Your Email Address"
+        />
+        <button class="btn btn-subscribe">subscribe</button>
+      </div>
+      <div>
+        <p>&copy; Copyright 2023 Anis Express. All rights rserved</p>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
